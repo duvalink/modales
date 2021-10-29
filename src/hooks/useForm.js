@@ -15,7 +15,6 @@ export const useForm = (initialForm, validateForm) => {
       [name]: value,
     });
   };
-
   const handleBlur = (e) => {
     handleChange(e);
     setErrors(validateForm(form));
@@ -28,7 +27,7 @@ export const useForm = (initialForm, validateForm) => {
     if (Object.keys(errors).length === 0) {
       setLoading(true);
       helpHttp()
-        .post("https://formsubmit.co/ajax/jose86mend@gmail.com", {
+        .post("https://formsubmit.co/ajax/correo-Destino", {//debes poner el correo a donde se desean recibir los correos.
           body: form,
           headers: {
             "Content-Type": "application/json",

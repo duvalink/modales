@@ -44,7 +44,7 @@ const SongSearch = () => {
 
   return (
     <div>
-      <h2>Song Search</h2>
+      <h2>Buscador de canciones</h2>
       <article className="grid-1-3">
         <SongForm handleSearch={handleSearch} />
         {loading && <Loader />}
