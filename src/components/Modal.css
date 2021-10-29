@@ -13,19 +13,25 @@
 
 .modal-container {
   position: relative;
+  width: 50%;
+  height: 100vh;
   padding: 1rem;
-  min-width: 320px;
-  max-width: 480px;
-  min-height: 200px;
-  max-height: 600px;
   overflow-y: auto;
   background-color: #fff;
+  border-radius: 15px;
 }
 
 .modal-close {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  background-color: #cd6155;
+  outline: 2px solid #cd6155;
+}
+
+.modal-close:hover {
+  background-color: red;
+  transition: all 0.75s;
 }
 
 .modal.is-open {
@@ -60,8 +66,13 @@ button {
     font-size: 2rem;
   }
   .modal-container {
-    padding-top: 15%;
+    padding-top: 12%;
     border-radius: 10px;
+    overflow-y: auto;
+    min-width: 320px;
+    max-width: 480px;
+    min-height: 200px;
+    max-height: 500px;
   }
 
   .modal-close {
